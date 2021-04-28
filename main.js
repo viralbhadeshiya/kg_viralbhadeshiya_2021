@@ -12,7 +12,7 @@ const numberMap = {
     9: 'Nine'
 }
 
-// std input
+// stdInput
 const args = process.argv.slice(2)
 const result = []
 args.forEach(no => {
@@ -22,21 +22,8 @@ args.forEach(no => {
         });
         intString = intArray.toString().replace(/,/g, '');
         result.push(intString);
-        // let string = null;
-        // if(no > 9){
-        //     while (no > 9){
-        //         singleDigit = (no % 10)
-        //         if(singleDigit === 0){
-        //             no = no/10
-        //         } else {
-        //             no = no - singleDigit
-        //             string = (numberMap[singleDigit]) + string
-        //         }
-        //     }
-        // }
-        // string = numberMap[no] + string
-        // newString = string.replace('null', '')
-        // result.push(newString)
     }
 });
+
+// stdOutput
 console.log(result)
